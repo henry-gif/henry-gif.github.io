@@ -13,7 +13,7 @@
      width: 20%;height: 10%;
     color: white;
     justify-content: center;
-
+	font-size: 22px;
    border-radius:22px;
 ;
 }
@@ -106,3 +106,13 @@ h2 {
 .tales {
 	width: 100%;
   }
+#btnVerDetalles{
+font-size: 20px ;
+
+
+}
+.navbar-nav.navbar-center {
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
+}
