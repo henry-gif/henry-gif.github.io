@@ -107,12 +107,21 @@ h2 {
 	width: 100%;
   }
 #btnVerDetalles{
-font-size: 20px ;
-
+font-size: 15px ;
+min-height: 10%;
+max-width: 50%;
+text-align: center;
+justify-content:center;
 
 }
 .navbar-nav.navbar-center {
     position: absolute;
     left: 50%;
     transform: translatex(-50%);
+}
+#imgborder{
+	border-bottom:3px solid black;
+	border-top: 3px solid black;
+	border-left: 3px solid black;
+	border-right: 3px solid black;
 }
