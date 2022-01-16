@@ -1,3 +1,13 @@
+/* Carga */
+
+window.onload = function(){
+    $('#onload').fadeOut();
+    $('body').removeClass('hidden');
+}
+
+
+
+
 function redirectToOtherPage(url) {
     window.location.href = url;
 }
