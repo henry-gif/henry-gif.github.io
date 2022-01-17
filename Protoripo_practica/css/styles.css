@@ -50,7 +50,7 @@ navigation-clean-button{
 	border-width: 2px; border-style: dashed; border-color: white; 
 	position: relative;
 	
-	color: white;
+	color: black;
 	font-weight: bold;
 	font-size: 22px;
 	line-height: 38px;
@@ -167,6 +167,7 @@ justify-content:center;
 	background-color: hsl(0, 0%, 100%);
 	border: 1px solid #000;
 	transition: 0.2s ease-in-out all;
+	
   }
   
   .default-btn:hover {
@@ -272,3 +273,7 @@ justify-content:center;
 	  transform: rotate(360deg);
 	}
   }
+ #centerdiv{
+	display: flex;
+	align-items: center;
+ }
