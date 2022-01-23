@@ -37,17 +37,16 @@ navigation-clean-button{
   
   width: auto;
 	height: 38px;
-	
-	background-color: #ff0000;
+
 	-webkit-border-radius: 3px 4px 4px 3px;
 	-moz-border-radius: 3px 4px 4px 3px;
 	border-radius: 3px 4px 4px 3px;
 	
-	border-left: 1px solid #6ab070;
+
 
 	/* This makes room for the triangle */
 	margin-left: 19px;
-	border-width: 2px; border-style: dashed; border-color: white; 
+
 	position: relative;
 	
 	color: black;
@@ -66,9 +65,7 @@ navigation-clean-button{
 	left: -19px;
 	width: 0;
 	height: 0;
-	border-top: 19px solid transparent;
-	border-bottom: 19px solid transparent;
-	border-right: 19px solid #6ab070;
+
 }
 
 /* Makes the circle */
@@ -276,4 +273,10 @@ justify-content:center;
  #centerdiv{
 	display: flex;
 	align-items: center;
+ }
+ .downcenter{
+	position: absolute;
+	bottom: 8px;
+		
+	transform: translate(-50%, -50%);
  }
