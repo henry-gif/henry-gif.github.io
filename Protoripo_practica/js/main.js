@@ -30,5 +30,10 @@ $("#zoom").elevatezoom({zoomType:'Lens', lenshade:'round',lensize:80});
 
 
 });
+var opcion=document.getElementById(opc);
+var funcionmouse=function(){
+    this.style.color = '#000'
+}
+opcion.onmouseover = mouseOverFunction;
 document.getElementById(opc).style.color = "#ff0000"; // forecolor
-  document.getElementById(opc).style.backgroundColor = "#ff0000"; // backcolor
+document.getElementById(opc).style.backgroundColor = "#ff0000"; // backcolor
