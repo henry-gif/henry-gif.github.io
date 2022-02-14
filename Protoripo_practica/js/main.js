@@ -30,10 +30,16 @@ $("#zoom").elevatezoom({zoomType:'Lens', lenshade:'round',lensize:80});
 
 
 });
-var opcion=document.getElementById(opc);
-var funcionmouse=function(){
-    this.style.color = '#000'
-}
-opcion.onmouseover = mouseOverFunction;
-document.getElementById(opc).style.color = "#ff0000"; // forecolor
-document.getElementById(opc).style.backgroundColor = "#ff0000"; // backcolor
+
+
+
+    
+var basePrice = +(S('#price').html().match(/\d+\.\d+/)[0]);
+
+$(".readers").change(function() {
+  newPrice = basePrice;
+  $(".readers option:selected").each(function() {
+    newPrice += +$(this).attr('data-price');
+  });
+  $("#price").html('S' + newPrice.toFixed(2));
+});
