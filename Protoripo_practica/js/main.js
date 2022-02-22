@@ -17,10 +17,10 @@ $(document).ready(function () {
 });
 
 $("#btnVerDetalles").click(function(){
-       $(this).append('<span></span>')
-       var top =e.pageY;
-       var left =e.pageY;
-       $(this).children().offset({top:top, left:left}).fadeOut(500);
+  $(this).append('<span></span>')
+  var top =e.pageY;
+  var left =e.pageY;
+  $(this).children().offset({top:top, left:left}).fadeOut(500);
 });
 
 $(".nav-link active").click(function(){
@@ -33,13 +33,3 @@ $("#zoom").elevatezoom({zoomType:'Lens', lenshade:'round',lensize:80});
 
 
 
-    
-var basePrice = +(S('#price').html().match(/\d+\.\d+/)[0]);
-
-$(".readers").change(function() {
-  newPrice = basePrice;
-  $(".readers option:selected").each(function() {
-    newPrice += +$(this).attr('data-price');
-  });
-  $("#price").html('S' + newPrice.toFixed(2));
-});
